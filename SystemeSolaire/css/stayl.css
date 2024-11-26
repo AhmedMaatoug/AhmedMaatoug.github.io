@@ -1,0 +1,192 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    direction: rtl;
+    text-align: right;
+    padding: 20px;
+    margin: 0;
+}
+
+h1, h2 {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+section {
+    margin: 30px 0;
+}
+
+article {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #FFD700;
+    text-align: center;
+}
+
+p {
+    font-size: 1.4em;
+    line-height: 1.8;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes stars {
+    0% { background-position: 0 0; }
+    100% { background-position: -10000px 10000px; }
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    z-index: -1;
+    animation: stars 100s linear infinite;
+    opacity: 0.2;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2em;
+    color: #FFD700;
+}
+
+.programmer {
+    font-size: 1.1em;
+    color: #FFD700;
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    width: 70%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+form label {
+    font-size: 1.5em; 
+    color: #FFD700; 
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.5); /
+    display: block;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+form label:hover {
+    transform: scale(1.1); 
+}
+
+form textarea, form input, form select {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+form select {
+    font-size: 1.2em;
+    padding: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+form select option {
+    color: #000; 
+    background-color: #fff; 
+}
+
+form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #FFD700;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-color: #ffa500;
+    transform: scale(1.05);
+}
+
+.navigate-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #FFD700;
+    color: #000;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navigate-button:hover {
+    background-color: #ffa500;
+    transform: scale(1.1) rotate(5deg);
+}
+
+footer .navigate-button {
+    position: static;
+    margin-top: 20px;
+}
