@@ -17,6 +17,7 @@ h1, h2 {
 h1 {
     font-size: 3em;
     margin: 0;
+    margin: 60px;
 }
 
 h2 {
@@ -60,7 +61,7 @@ nav {
 }
 .navigate-button{
     float: left;
-    margin-right: 70%;
+    margin-right: 83%;
     
 }
 .nav-list {
